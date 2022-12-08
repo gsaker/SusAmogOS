@@ -63,6 +63,16 @@ sudo systemctl status cron/crond
 #general service issues
 ```
 
+## Ubuntu Pro
+```
+sudo apt update
+sudo apt install ubuntu-advantage-tools
+sudo ua attach C12NzmyPywD8EGVXQDx948xexkYoeZ
+sudo usg generate-tailoring cis_level1_workstation tailor.xml
+#Change file to selected=false on essential services
+usg fix --tailoring-file tailor.xml
+```
+
 ## Sample SSHD Changes
 
 ```
